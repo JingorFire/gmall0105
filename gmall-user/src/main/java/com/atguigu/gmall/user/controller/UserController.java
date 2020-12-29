@@ -23,17 +23,19 @@ public class UserController {
     UserService userService;
 
 
-//根据用户Id查询收货地址
+    //根据用户Id查询收货地址
     @RequestMapping("getReceiveAddressByMemberId")
     @ResponseBody
-    public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String memberId){
-        List<UmsMemberReceiveAddress> umsMemberReceiveAddress= userService.getReceiveAddressByMemberId(memberId);
+    public List<UmsMemberReceiveAddress> getReceiveAddressByMemberId(String memberId) {
+        List<UmsMemberReceiveAddress> umsMemberReceiveAddress = userService.getReceiveAddressByMemberId(memberId);
         return umsMemberReceiveAddress;
 
 
-    }@RequestMapping("getAllUser")
+    }
+
+    @RequestMapping("getAllUser")
     @ResponseBody
-    public List<UmsMember> getAllUser(){
+    public List<UmsMember> getAllUser() {
         List<UmsMember> umsMembers = userService.getAllUser();
         return umsMembers;
     }
@@ -41,12 +43,10 @@ public class UserController {
 
     @RequestMapping("index")
     @ResponseBody
-    public String index(){
+    public String index() {
 
         return "hello user";
     }
-
-
 
 
 }

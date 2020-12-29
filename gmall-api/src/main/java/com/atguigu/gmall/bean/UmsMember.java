@@ -1,4 +1,5 @@
 package com.atguigu.gmall.bean;
+
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -180,9 +181,6 @@ public class UmsMember implements Serializable {
     public void setHistoryIntegration(int historyIntegration) {
         this.historyIntegration = historyIntegration;
     }
-
-
-
 
 
 }

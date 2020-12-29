@@ -10,7 +10,7 @@ import java.util.List;
  * @create 2020-12-18 17:21
  */
 
-public interface UserMapper extends Mapper<UmsMember>{
+public interface UserMapper extends Mapper<UmsMember> {
 
     List<UmsMember> selectAllUser();
 }
