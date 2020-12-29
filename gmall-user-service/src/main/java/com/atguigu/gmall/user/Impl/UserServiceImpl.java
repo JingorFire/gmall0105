@@ -1,13 +1,14 @@
-package com.atguigu.gmall.user.service.Impl;
+package com.atguigu.gmall.user.Impl;
 
 
+import com.alibaba.dubbo.config.annotation.Service;
 import com.atguigu.gmall.bean.UmsMember;
 import com.atguigu.gmall.bean.UmsMemberReceiveAddress;
-import com.atguigu.gmall.service.UserService;
 import com.atguigu.gmall.user.mapper.UmsMemberReceiveAddressMapper;
 import com.atguigu.gmall.user.mapper.UserMapper;
+import com.atguigu.gmall.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+
 
 import java.util.List;
 
@@ -15,6 +16,7 @@ import java.util.List;
  * @author Jinkex
  * @create 2020-12-18 16:39
  */
+
 @Service
 public class UserServiceImpl implements UserService {
 

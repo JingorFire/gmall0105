@@ -1,11 +1,10 @@
 package com.atguigu.gmall.user;
 
-import org.junit.Test;
-import org.testng.annotations.AfterTest;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class GmallUserServiceApplicationTests {
+class GmallUserWebApplicationTests {
 
     @Test
     void contextLoads() {
